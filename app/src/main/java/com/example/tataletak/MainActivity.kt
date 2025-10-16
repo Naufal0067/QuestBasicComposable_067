@@ -11,17 +11,16 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.core.view.WindowCompat.enableEdgeToEdge
-import com.example.tataletak.ui.theme.TataLetakTheme
+import com.example.tataletak.ui.theme.TataLeTAKTheme
 
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            TataLetakTheme {
+            TataLeTAKTheme{
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    TataletakColumnRow(
+                    TataletakBoxColumnRow( //
                         modifier = Modifier.padding(paddingValues = innerPadding)
                     )
                 }
